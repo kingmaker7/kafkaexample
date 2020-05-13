@@ -16,7 +16,7 @@ public class DataDump {
 		String json="";
 		try {
 		Class.forName("com.mysql.jdbc.Driver");
-		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila","root","Kalyani@143");  
+		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila","root","abcd@123");  
 		Statement stmt=con.createStatement();  
 		ResultSet rs=stmt.executeQuery("select actor_id,first_name,last_name,last_update from actor");  
 		Actor actor=new Actor();
